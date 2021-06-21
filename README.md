@@ -5,6 +5,8 @@ This is a simple REST api which can create and store todos. It uses mariadb as t
 ## Getting started
 
 ```sh
+# Install dependencies
+$ npm install
 # Run the server
 $ npm start
 # Or watch for changes via nodemon
