@@ -28,3 +28,23 @@ You can run the test suite with the following command
 ```sh
 $ npm test
 ```
+
+## Endpoints
+
+```sh
+# Create a todo
+curl --request POST \
+  --url http://localhost:3000/ \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"name": "Build docker container"
+}'
+
+# List all todos
+curl --request GET \
+  --url http://localhost:3000/
+
+# Get todo by id
+curl --request GET \
+  --url http://localhost:3000/1
+```
